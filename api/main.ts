@@ -1,5 +1,4 @@
 import express from "npm:express@4.18.2";
-import { createServer } from "node:http";
 
 const app = express();
 
@@ -22,4 +21,4 @@ app.get(
   }
 );
 
-export default createServer(app);
+app.listen(8000);
